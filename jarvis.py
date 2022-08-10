@@ -31,7 +31,7 @@ def wishme():
     else:
         speak("good evening sir!")
     speak("I am Jarvis")
-    #speak("what i can do for you sir")
+    speak("what i can do for you sir")
 
 def takecommand():
     #it takes microphone input from user and  return text output.
@@ -198,12 +198,6 @@ if __name__ == "__main__":
         elif 'who are you'  in query:
             speak("i am jarvis")
 
-        elif 'i love you' in query:
-            speak("i love you too sir!")
-
-        elif 'about yourself' in query:
-            speak("my name is jarvis, i am personal assistant of Mr. Hrithik Choudhary. i was born on 9 august 2022 and created with the help of python language")
-
         elif 'your boss' in query:
             speak("Hrithik Choudhary")
 
@@ -263,7 +257,6 @@ if __name__ == "__main__":
         
         elif 'open github' in query:
             open_App()
-
 
         elif 'whatsapp message' in query:
             whatsapp()
