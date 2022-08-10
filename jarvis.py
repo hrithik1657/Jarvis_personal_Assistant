@@ -99,7 +99,7 @@ def whatsapp():
         min=int(takecommand())
         pywhatkit.sendwhatmsg(person,msg,hour,min,50)
         speak("sent sir!")
-    
+
     while True:
         speak("tell me the name  of the person!")
         name=takecommand().lower()
@@ -169,9 +169,12 @@ def open_App():
     elif 'google app' in query:
         webbrowser.open("www.google.com")
 
+    elif 'open github' in query:
+        webbrowser.open("https://github.com/")
+
 def close_App():
     speak("ok sir! wait")
-    if 'youtube app' in query:
+    if 'close youtube app' in query:
         os.system("TASKKILL /F /im chrome.exe")
 
     elif 'close chrome' in query:
@@ -231,6 +234,9 @@ if __name__ == "__main__":
         elif 'youtube app' in query:
             open_App()
         
+        elif 'close youtube app' in query:
+            close_App()
+
         elif 'open visual studio code' in query:
             open_App()
         
@@ -254,6 +260,10 @@ if __name__ == "__main__":
 
         elif 'play song' in query:
             song()
+        
+        elif 'open github' in query:
+            open_App()
+
 
         elif 'whatsapp message' in query:
             whatsapp()
